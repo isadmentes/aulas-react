@@ -1,3 +1,4 @@
+import { Card } from "./componentes/Card"
 import { Hello } from "./componentes/Hello"
 
 // apagou-se tudo e copiou-se o que estava na lousa //
@@ -9,15 +10,15 @@ const App = () => {
       </h1>
 
       <div className="container mx-auto p-6 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
-        <div className="rounded-2xl border p-4 bg-white shadow-sm">
-        Card A
-      </div>
-      <div className="rounded-2xl border p-4 bg-white shadow-sm">
-        Card B
-      </div>
-      <div className="rounded-2xl border p-4 bg-white shadow-sm">
-        Card C
-      </div>
+        <Card title="Card A">
+          <p> Filho de José </p>
+        </Card>
+         <Card title="Card B">
+          <p> Filho de Maria</p>
+        </Card>
+         <Card title="Card C">
+          <p> Filho de João </p>
+        </Card>
     </div>
 
     <a className="inline-block px-4 py-2 rounded-1g border hover:bg-amber-700 transition-all cursor-pointer focus:ring-2 focus:ring-blue-500">
