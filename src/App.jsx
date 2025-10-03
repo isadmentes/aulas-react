@@ -17,6 +17,10 @@ const App = () => {
         Card C
       </div>
     </div>
+
+    <a className="inline-block px-4 py-2 rounded-1g border hover:bg-amber-700 transition-all cursor-pointer focus:ring-2 focus:ring-blue-500">
+      Link com foco
+    </a>
     </main>
   )
 }
