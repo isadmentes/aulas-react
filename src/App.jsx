@@ -1,3 +1,5 @@
+import { Hello } from "./componentes/Hello"
+
 // apagou-se tudo e copiou-se o que estava na lousa //
 const App = () => {
   return (
@@ -21,6 +23,8 @@ const App = () => {
     <a className="inline-block px-4 py-2 rounded-1g border hover:bg-amber-700 transition-all cursor-pointer focus:ring-2 focus:ring-blue-500">
       Link com foco
     </a>
+
+    <Hello  name="Isabel" />
     </main>
   )
 }
