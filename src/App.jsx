@@ -1,8 +1,13 @@
+import { useState } from "react"
 import { Card } from "./componentes/Card"
 import { Hello } from "./componentes/Hello"
 
 // apagou-se tudo e copiou-se o que estava na lousa //
 const App = () => {
+  const [count, setCount] = useState(0)
+
+  const inc = () => setCount(c => c + 1)
+
   return (
     <main className="min-h-dvh place-items-center bg-blue-900">
       <h1 className="text-3xl font-bold text-slate-800">
@@ -26,6 +31,13 @@ const App = () => {
     </a>
 
     <Hello  name="Isabel" />
+
+    <button
+      className="inline-block px-4 py-2 rounded-1g border hover:bg-amber-700 transition-all cursor-pointer focus:ring-2 focus:ring-blue-500"
+        onClick={inc}
+      >
+        contador {count}
+      </button>
     </main>
   )
 }
